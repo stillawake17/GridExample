@@ -1,0 +1,58 @@
+/*
+.container {
+    grid-template-columns: "one" "two" "three";
+    grid-template-rows: "four" "five" "six" ;
+    grid-template-areas: "one two three"
+                         "one two three";
+    display: grid;
+    border: 1px;
+}*/
+
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 50px; 
+    margin-top: 50px;
+    margin: 50px;
+   
+}
+.aside {
+    grid-area: span 3 ;
+    
+    
+}
+
+.containerOne {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 1fr 1fr;
+    grid-template-areas:    
+    
+            "aside one two"
+            ". three four"
+            ". five six";
+    
+   justify-content: center;
+   border: 5px dotted;
+   align-content: center;
+   align-items: center;
+   padding:10px;
+   gap: 5px 5px; 
+   font-size:30px; 
+
+}
+
+
+div {
+    display:inline;
+}
+
+
+img {
+    max-width: 50%;
+}
+/*
+.one .two .three .four .five .six {
+    justify-self: center;
+    grid-column: auto;
+    margin-left: 50px;
+}*/
