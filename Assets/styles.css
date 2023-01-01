@@ -1,12 +1,12 @@
-/*
-.container {
-    grid-template-columns: "one" "two" "three";
-    grid-template-rows: "four" "five" "six" ;
-    grid-template-areas: "one two three"
-                         "one two three";
-    display: grid;
-    border: 1px;
-}*/
+nav {
+display:inline;
+}
+h4.contact, h4.about, h4.home {
+    display: inline;
+    padding: 50px;
+    background-color: aquamarine;
+    width:100%;    
+}
 
 body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,21 +15,19 @@ body {
     margin: 50px;
    
 }
-.aside {
-    grid-area: span 3 ;
-    
-    
-}
 
+div {
+    display:inline;
+}
 .containerOne {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:    
     
             "aside one two"
-            ". three four"
-            ". five six";
+            "aside three four"
+            "aside five six";
     
    justify-content: center;
    border: 5px dotted;
@@ -38,21 +36,24 @@ body {
    padding:10px;
    gap: 5px 5px; 
    font-size:30px; 
+   margin-top: 100px;
 
 }
-
-
-div {
-    display:inline;
-}
-
 
 img {
     max-width: 50%;
 }
-/*
+
 .one .two .three .four .five .six {
-    justify-self: center;
-    grid-column: auto;
-    margin-left: 50px;
-}*/
+    justify-self: start;
+ 
+}
+
+.aside {
+    grid-area: 1 / 1 / 4 / 2 ;
+    max-height: fit-content;
+    border-right: solid 5px;
+    
+    
+    
+}
